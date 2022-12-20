@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sevenwonders.OptionsView">
+    <children>
+        <Button fx:id="boutonMenu" onMouseClicked="#mainMenu" layoutX="10" layoutY="10" mnemonicParsing="false" text="Main Menu" />
+        <Label layoutX="50" layoutY="50" text="Music Volume :" />
+        <Slider layoutX="150" layoutY="53"/>
+        <Label layoutX="50" layoutY="100" text="Effects Volume :" />
+        <Slider layoutX="150" layoutY="103"/>
+    </children>
+</AnchorPane>

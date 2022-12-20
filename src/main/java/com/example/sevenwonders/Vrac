@@ -1,0 +1,112 @@
+    private void create (String objectType, String objectName) throws Exception {
+        switch (objectType) {
+            case "Warrior":
+                Warrior warrior = new Warrior(objectName, objectType);
+                break;
+            case "Hunter":
+                Hunter hunter = new Hunter(objectName, objectType);
+                break;
+            case "Mage":
+                Mage mage = new Mage(objectName, objectType);
+                break;
+            case "Healer":
+                Healer healer = new Healer(objectName, objectType);
+                break;
+        }
+    }
+
+
+    heroNumber = comboBox.getSelectionModel().getSelectedIndex();
+
+            if (heroNumber == 0) {
+                String objectType = type1.getValue().toString();
+                String objectName = name1.getText();
+                create(objectType, objectName);
+                nextScene();
+            }
+
+            else if (heroNumber == 1) {
+                String objectType = type1.getValue().toString();
+                String objectName = name1.getText();
+                create(objectType, objectName);
+                objectType = type2.getValue().toString();
+                objectName = name2.getText();
+                create(objectType, objectName);
+                nextScene();
+            }
+
+            else if (heroNumber == 2) {
+                String objectType = type1.getValue().toString();
+                String objectName = name1.getText();
+                create(objectType, objectName);
+                objectType = type2.getValue().toString();
+                objectName = name2.getText();
+                create(objectType, objectName);
+                objectType = type3.getValue().toString();
+                objectName = name3.getText();
+                create(objectType, objectName);
+                nextScene();
+            }
+
+            else if (heroNumber == 3) {
+                String objectType = type1.getValue().toString();
+                String objectName = name1.getText();
+                create(objectType, objectName);
+                objectType = type2.getValue().toString();
+                objectName = name2.getText();
+                create(objectType, objectName);
+                objectType = type3.getValue().toString();
+                objectName = name3.getText();
+                create(objectType, objectName);
+                objectType = type4.getValue().toString();
+                objectName = name4.getText();
+                create(objectType, objectName);
+                nextScene();
+            }
+
+            else if (heroNumber == 4) {
+                String objectType = type1.getValue().toString();
+                String objectName = name1.getText();
+                create(objectType, objectName);
+                objectType = type2.getValue().toString();
+                objectName = name2.getText();
+                create(objectType, objectName);
+                objectType = type3.getValue().toString();
+                objectName = name3.getText();
+                create(objectType, objectName);
+                objectType = type4.getValue().toString();
+                objectName = name4.getText();
+                create(objectType, objectName);
+                objectType = type5.getValue().toString();
+                objectName = name5.getText();
+                create(objectType, objectName);
+                nextScene();
+            }
+
+            else {
+                System.out.println("Veuillez sélectionner le nombre de héros à créer");
+            }
+
+            protected void setType(Class combo){
+                    combo.getItems().clear();
+                    for (int i = 0; i <= 100; i++) {
+                        combo.getItems().add(i);
+                    }
+                }
+
+                public List<String> getNoms(List<ComboBox<String>> comboBoxes) {
+                        List<String> noms = new ArrayList<>();
+                        for (ComboBox<String> comboBox : comboBoxes) {
+                            noms.add(comboBox.getValue());
+                        }
+                        return noms;
+                    }
+
+                    protected void setType(){
+                        List<ComboBox<String>> comboBoxes = new ArrayList<>();
+                        comboBoxes.add(age1);
+                        comboBoxes.add(age2);
+                        comboBoxes.add(age3);
+
+                        List<String> noms = getNoms(comboBoxes);
+                    }

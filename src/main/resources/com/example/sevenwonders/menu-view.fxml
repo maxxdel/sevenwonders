@@ -6,11 +6,13 @@
 
 <?import javafx.scene.control.Button?>
 <VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.example.sevenwonders.HelloController">
+      fx:controller="com.example.sevenwonders.MenuControllers">
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
     </padding>
 
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
+    <Label fx:id="testText"/>
+    <Button fx:id = "gameButton" text="GAME" layoutX="20" layoutY="2000" onAction="#onGameButtonClick"/>
+    <Button fx:id = "optionsButton" text="OPTIONS" onAction="#onOptionsButtonClick" />
+    <Button fx:id = "quitButton" text="QUIT" onAction="#onQuitButtonClick"/>
 </VBox>
