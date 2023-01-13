@@ -1,0 +1,33 @@
+@font-face {
+    src: url("font/PossumSaltareNF.ttf");
+}
+.font13 {
+    -fx-font-family: "PossumSaltare";
+    -fx-font-size: 16;
+
+}
+.font12 {
+    -fx-font-family: "PossumSaltare";
+    -fx-font-size: 15;
+
+}
+.font14 {
+    -fx-font-family: "PossumSaltare";
+    -fx-font-size: 14;
+
+}
+.font22 {
+    -fx-font-family: "PossumSaltare";
+    -fx-font-size: 22;
+
+}
+.title {
+    -fx-font-family: "PossumSaltare";
+    -fx-font-size: 44;
+    -fx-background-color: "transparent";
+}
+.title2 {
+    -fx-font-family: "PossumSaltare";
+    -fx-font-size: 83;
+    -fx-background-color: "transparent";
+}

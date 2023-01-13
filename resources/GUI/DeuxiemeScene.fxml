@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="840.0" prefWidth="1536.0" stylesheets="@font.css" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.DeuxiemeController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <ImageView fitHeight="1050.0" fitWidth="1800.0" onMouseDragged="#effRegle" onMouseEntered="#hover" onMouseExited="#hover" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../background/Scroll_flat.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane prefHeight="540.0" prefWidth="900.0">
+         <children>
+            <Label fx:id="joueursActAff" layoutX="14.0" layoutY="15.0" prefHeight="56.0" prefWidth="636.0" styleClass="title" stylesheets="@font.css" text="joueur actuel" textAlignment="CENTER" visible="false">
+               <font>
+                  <Font name="Bell MT Bold" size="22.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="cat" fitHeight="267.0" fitWidth="239.0" layoutX="414.0" layoutY="529.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../images/tokens/token-cat.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="startPartie" layoutX="538.0" layoutY="255.0" mnemonicParsing="false" onAction="#lancerLaPartie" onMouseEntered="#hover" onMouseExited="#hover" style="-fx-background-color: transparent;" styleClass="title" stylesheets="@font.css" text="Lancer la partie">
+               <font>
+                  <Font size="23.0" />
+               </font></Button>
+            <VBox fx:id="boxInfoGeneral" layoutX="1306.0" layoutY="1.0" prefHeight="840.0" prefWidth="230.0" spacing="50.0" visible="false">
+               <children>
+                  <Button fx:id="infoJoueur1" minHeight="60.0" minWidth="150.0" mnemonicParsing="false" onMouseEntered="#hover" onMouseExited="#hover" styleClass="font12" text="joueur 1" visible="false">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="infoJoueur2" minHeight="60.0" minWidth="150.0" mnemonicParsing="false" onMouseEntered="#hover" onMouseExited="#hover" styleClass="font12" text="joueur 2" visible="false">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="infoJoueur3" minHeight="60.0" minWidth="150.0" mnemonicParsing="false" onMouseEntered="#hover" onMouseExited="#hover" styleClass="font12" text="joueur 3" visible="false">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="infoJoueur4" minHeight="60.0" minWidth="150.0" mnemonicParsing="false" onMouseEntered="#hover" onMouseExited="#hover" styleClass="font12" text="joueur 4" visible="false">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="infoJoueur5" minHeight="60.0" minWidth="150.0" mnemonicParsing="false" onMouseEntered="#hover" onMouseExited="#hover" styleClass="font12" text="joueur 5" visible="false">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="infoJoueur6" minHeight="60.0" minWidth="150.0" mnemonicParsing="false" onMouseEntered="#hover" onMouseExited="#hover" styleClass="font12" text="joueur 6" visible="false">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="infoJoueur7" minHeight="60.0" minWidth="150.0" mnemonicParsing="false" onMouseEntered="#hover" onMouseExited="#hover" styleClass="font12" text="joueur 7" visible="false">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="40.0" top="40.0" />
+               </padding>
+            </VBox>
+            <VBox fx:id="resultWar" layoutX="1050.0" layoutY="1.0" prefHeight="840.0" prefWidth="260.0" visible="false">
+               <children>
+                  <Text fx:id="tResultWar" fill="#1370d3" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font12" text="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" textAlignment="JUSTIFY" wrappingWidth="208.0">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets right="10.0" />
+                     </VBox.margin>
+                  </Text>
+                  <Button fx:id="finWar" mnemonicParsing="false" onMouseClicked="#finTour" prefHeight="29.0" prefWidth="208.0" styleClass="font12" text="fermer l'onglet" />
+               </children>
+               <padding>
+                  <Insets left="10.0" top="10.0" />
+               </padding>
+            </VBox>
+            <VBox fx:id="effetWonder" layoutX="1050.0" layoutY="1.0" prefHeight="840.0" prefWidth="260.0" spacing="10.0" visible="false">
+               <children>
+                  <Text fx:id="textEffetWonder" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="font12" text="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" wrappingWidth="208.0" />
+                  <Button fx:id="buttonEffetWonder" mnemonicParsing="false" onMouseClicked="#buttonEffetWonder" onMouseEntered="#hover" onMouseExited="#hover" prefHeight="29.0" prefWidth="206.0" styleClass="font12" text="activez l'effet" />
+                  <Button fx:id="gauche" mnemonicParsing="false" onMouseClicked="#choixDir" prefHeight="29.0" prefWidth="213.0" styleClass="font12" text="gauche" />
+                  <Button fx:id="droite" mnemonicParsing="false" onMouseClicked="#choixDir" prefHeight="29.0" prefWidth="208.0" styleClass="font12" text="droite" />
+                  <MenuButton fx:id="piocheAlexandrie" mnemonicParsing="false" styleClass="font12" text="les premières cartes " visible="false">
+                    <items>
+                      <MenuItem fx:id="pioche0" mnemonicParsing="false" onAction="#piocheAl" text="deck central" visible="false">
+                           <graphic>
+                              <ImageView fx:id="ipioche0" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/cards/card-back/card-back-alexandrie.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </MenuItem>
+                      <MenuItem fx:id="pioche1" mnemonicParsing="false" onAction="#piocheAl" text="deck joueur1" visible="false">
+                           <graphic>
+                              <ImageView fx:id="ipioche1" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+                           </graphic>
+                        </MenuItem>
+                        <MenuItem fx:id="pioche2" mnemonicParsing="false" onAction="#piocheAl" text="deck joueur2" visible="false">
+                           <graphic>
+                              <ImageView fx:id="ipioche2" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+                           </graphic>
+                        </MenuItem>
+                        <MenuItem fx:id="pioche3" mnemonicParsing="false" onAction="#piocheAl" text="deck joueur3" visible="false">
+                           <graphic>
+                              <ImageView fx:id="ipioche3" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+                           </graphic>
+                        </MenuItem>
+                        <MenuItem fx:id="pioche4" mnemonicParsing="false" onAction="#piocheAl" text="deck joueur4" visible="false">
+                           <graphic>
+                              <ImageView fx:id="ipioche4" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+                           </graphic>
+                        </MenuItem>
+                        <MenuItem fx:id="pioche5" mnemonicParsing="false" onAction="#piocheAl" text="deck joueur5" visible="false">
+                           <graphic>
+                              <ImageView fx:id="ipioche5" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+                           </graphic>
+                        </MenuItem>
+                        <MenuItem fx:id="pioche6" mnemonicParsing="false" onAction="#piocheAl" text="deck joueur6" visible="false">
+                           <graphic>
+                              <ImageView fx:id="ipioche6" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+                           </graphic>
+                        </MenuItem>
+                        <MenuItem fx:id="pioche7" mnemonicParsing="false" onAction="#piocheAl" text="deck joueur7" visible="false">
+                           <graphic>
+                              <ImageView fx:id="ipioche7" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+                           </graphic>
+                        </MenuItem>
+                    </items>
+                  </MenuButton>
+                  <MenuButton fx:id="piocheHalicarnasse" mnemonicParsing="false" prefHeight="29.0" prefWidth="209.0" styleClass="font12" text="5 premieres carte" visible="false">
+                    <items>
+                      <MenuItem fx:id="piocheHa1" mnemonicParsing="false" onAction="#pioHa" text="1er carte" visible="false">
+                           <graphic>
+                              <ImageView fx:id="iHa1" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+                           </graphic>
+                        </MenuItem>
+                      <MenuItem fx:id="piocheHa2" mnemonicParsing="false" onAction="#pioHa" text="2eme carte" visible="false">
+                           <graphic>
+                              <ImageView fx:id="iHa2" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+                           </graphic>
+                        </MenuItem>
+                        <MenuItem fx:id="piocheHa3" mnemonicParsing="false" onAction="#pioHa" text="3eme carte" visible="false">
+                           <graphic>
+                              <ImageView fx:id="iHa3" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+                           </graphic>
+                        </MenuItem>
+                        <MenuItem fx:id="piocheHa4" mnemonicParsing="false" onAction="#pioHa" text="4eme carte" visible="false">
+                           <graphic>
+                              <ImageView fx:id="iHa4" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+                           </graphic>
+                        </MenuItem>
+                        <MenuItem fx:id="piocheHa5" mnemonicParsing="false" onAction="#pioHa" text="5eme carte" visible="false">
+                           <graphic>
+                              <ImageView fx:id="iHa5" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+                           </graphic>
+                        </MenuItem>
+                    </items>
+                  </MenuButton>
+               </children>
+               <padding>
+                  <Insets left="10.0" right="10.0" top="20.0" />
+               </padding>
+            </VBox>
+            <Label fx:id="infoLabel" layoutX="1050.0" layoutY="1.0" prefHeight="840.0" prefWidth="260.0" styleClass="font14" text="info joueurs" textAlignment="JUSTIFY" visible="false" wrapText="true">
+               <font>
+                  <Font name="Bell MT Bold" size="14.0" />
+               </font>
+               <padding>
+                  <Insets left="20.0" top="10.0" />
+               </padding>
+            </Label>
+            <Label fx:id="textJt3" layoutX="768.0" layoutY="733.0" prefHeight="40.0" prefWidth="110.0" styleClass="font12" text="jeton3" visible="false" />
+            <Label fx:id="textInfoJt" layoutX="14.0" layoutY="182.0" prefHeight="40.0" prefWidth="454.0" styleClass="font12" text="vous pouvez prendre un jeton" textFill="RED" underline="true" visible="false" />
+            <Label fx:id="textJt1" layoutX="773.0" layoutY="557.0" prefHeight="40.0" prefWidth="110.0" styleClass="font12" text="jeton1" visible="false" />
+            <Label fx:id="textJt2" layoutX="768.0" layoutY="643.0" prefHeight="40.0" prefWidth="110.0" styleClass="font12" text="jeton2" visible="false" />
+            <ImageView fx:id="myWonderDeck" fitHeight="197.0" fitWidth="175.0" layoutX="399.0" layoutY="242.0" onMouseClicked="#drawMyDeck" onMouseEntered="#hover" onMouseExited="#hover" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../images/cards/card-back/card-back-question.png" />
+               </image></ImageView>
+            <ImageView fx:id="centreDeck" fitHeight="197.0" fitWidth="132.0" layoutX="600.0" layoutY="242.0" onMouseClicked="#drawCentreDeck" onMouseEntered="#hover" onMouseExited="#hover" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../images/cards/card-back/card-back-question.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="droiteDeck" fitHeight="197.0" fitWidth="174.0" layoutX="813.0" layoutY="242.0" onMouseClicked="#drawDroiteDeck" onMouseEntered="#hover" onMouseExited="#hover" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../images/cards/card-back/card-back-question.png" />
+               </image></ImageView>
+            <Label fx:id="infodeck1" layoutX="411.0" layoutY="445.0" prefHeight="40.0" prefWidth="103.0" styleClass="font12" text="infodeck1" visible="false" wrapText="true" />
+            <Label fx:id="infodeck2" layoutX="615.0" layoutY="445.0" prefHeight="40.0" prefWidth="103.0" styleClass="font12" text="infodeck2" visible="false" wrapText="true" />
+            <Label fx:id="infodeck3" focusTraversable="false" layoutX="828.0" layoutY="445.0" prefHeight="40.0" prefWidth="103.0" styleClass="font12" text="infodeck3" visible="false" wrapText="true" />
+            <VBox layoutX="35.0" layoutY="382.0" prefHeight="437.0" prefWidth="388.0">
+               <children>
+                  <ImageView fx:id="wonderImage" fitHeight="355.0" fitWidth="400.0" pickOnBounds="true" preserveRatio="true" visible="false" />
+                  <Label fx:id="labelWonder" minHeight="50.0" prefHeight="70.0" prefWidth="400.0" styleClass="font12" text="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" visible="false" wrapText="true" VBox.vgrow="NEVER">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Bell MT Bold" size="16.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </Label>
+               </children>
+            </VBox>
+            <ImageView fx:id="jeton1" fitHeight="107.0" fitWidth="118.0" layoutX="14.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../images/tokens/token-conflict-peace.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="jeton6" fitHeight="107.0" fitWidth="157.0" layoutX="578.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../images/tokens/token-conflict-peace.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="jeton5" fitHeight="107.0" fitWidth="132.0" layoutX="462.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../images/tokens/token-conflict-peace.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="jeton4" fitHeight="107.0" fitWidth="128.0" layoutX="350.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../images/tokens/token-conflict-peace.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="jeton3" fitHeight="107.0" fitWidth="130.0" layoutX="243.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../images/tokens/token-conflict-peace.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="jeton2" fitHeight="107.0" fitWidth="124.0" layoutX="131.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../images/tokens/token-conflict-peace.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="tokV1" disable="true" fitHeight="86.0" fitWidth="97.0" layoutX="684.0" layoutY="534.0" onMouseClicked="#drawJeton" onMouseEntered="#hover" onMouseExited="#hover" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../images/tokens-progress/back/token-back.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="tokV3" disable="true" fitHeight="86.0" fitWidth="103.0" layoutX="684.0" layoutY="710.0" onMouseClicked="#drawJeton" onMouseEntered="#hover" onMouseExited="#hover" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../images/tokens-progress/back/token-back.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="tokC" disable="true" fitHeight="86.0" fitWidth="103.0" layoutX="587.0" layoutY="710.0" onMouseClicked="#drawJeton" onMouseEntered="#hover" onMouseExited="#hover" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../images/tokens-progress/back/token-back.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="tokV2" disable="true" fitHeight="86.0" fitWidth="97.0" layoutX="684.0" layoutY="620.0" onMouseClicked="#drawJeton" onMouseEntered="#hover" onMouseExited="#hover" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../images/tokens-progress/back/token-back.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="voirFin" layoutX="652.0" layoutY="147.0" mnemonicParsing="false" onMouseClicked="#chargeFin" prefHeight="70.0" prefWidth="242.0" styleClass="font12" text="Fin, voir les résultat " visible="false" />
+            <Button fx:id="regle" layoutX="1180.0" layoutY="690.0" mnemonicParsing="false" onMouseClicked="#affRegle" onMouseEntered="#hover" onMouseExited="#hover" prefHeight="40.0" prefWidth="118.0" styleClass="font12" text="regles" visible="false" />
+            <Button fx:id="page1" layoutX="1180.0" layoutY="690.0" mnemonicParsing="false" onMouseEntered="#hover" onMouseExited="#hover" prefHeight="40.0" prefWidth="118.0" styleClass="font12" text="page1" visible="false" />
+            <Button fx:id="page2" layoutX="1180.0" layoutY="739.0" mnemonicParsing="false" onMouseEntered="#hover" onMouseExited="#hover" prefHeight="40.0" prefWidth="118.0" styleClass="font12" text="page2" visible="false" />
+            <Button fx:id="effRegle" layoutX="1139.0" layoutY="787.0" mnemonicParsing="false" onMouseClicked="#effRegle" prefHeight="40.0" prefWidth="200.0" styleClass="font12" text="effacer les boutons" visible="false" />
+            <ImageView fx:id="imageRegle" fitHeight="840.0" fitWidth="1536.0" pickOnBounds="true" preserveRatio="true" visible="false" />
+         </children>
+      </AnchorPane>
+      <FlowPane prefHeight="200.0" prefWidth="200.0" />
+      <DialogPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="480.0">
+          <header>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="320.0" />
+          </header>
+          <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="320.0" />
+          </content>
+          <expandableContent>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="320.0" />
+          </expandableContent>
+      </DialogPane>
+      <DialogPane />
+      <GridPane>
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+      </GridPane>
+      <SplitPane prefHeight="200.0" prefWidth="200.0" />
+      <TilePane prefHeight="200.0" prefWidth="200.0" />
+      <TextFlow prefHeight="200.0" prefWidth="200.0" />
+      <TilePane prefHeight="200.0" prefWidth="200.0" />
+      <TitledPane animated="false" text="untitled">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+        </content>
+      </TitledPane>
+      <TitledPane prefHeight="200.0" prefWidth="200.0" />
+   </children>
+</GridPane>
