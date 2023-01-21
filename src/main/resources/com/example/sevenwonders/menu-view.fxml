@@ -1,18 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
-
 <?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.example.sevenwonders.MenuControllers">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
 
-    <Label fx:id="testText"/>
-    <Button fx:id = "gameButton" text="GAME" layoutX="20" layoutY="2000" onAction="#onGameButtonClick"/>
-    <Button fx:id = "optionsButton" text="OPTIONS" onAction="#onOptionsButtonClick" />
-    <Button fx:id = "quitButton" text="QUIT" onAction="#onQuitButtonClick"/>
-</VBox>
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="840.0" prefWidth="775.0" stylesheets="@font.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sevenwonders.MenuControllers">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <ImageView fitHeight="845.0" fitWidth="963.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Assets/background/Homepage.png" />
+         </image>
+      </ImageView>
+      <AnchorPane prefHeight="986.0" prefWidth="1536.0">
+         <children>
+            <Button layoutX="295.0" layoutY="375.0" mnemonicParsing="false" onAction="#onGameButtonClick" prefHeight="26.0" prefWidth="230.0" styleClass="transparent-button" stylesheets="@font.css" text="NEW GAME" textAlignment="CENTER">
+               <font>
+                  <Font name="PossumSaltareNF" size="33.0" />
+               </font>
+            </Button>
+            <Button layoutX="317.0" layoutY="459.0" mnemonicParsing="false" prefHeight="69.0" prefWidth="186.0" styleClass="transparent-button" stylesheets="@font.css" text="OPTIONS" textAlignment="CENTER">
+               <font>
+                  <Font name="PossumSaltareNF" size="33.0" />
+               </font>
+            </Button>
+            <Button layoutX="353.0" layoutY="542.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="123.0" styleClass="transparent-button" stylesheets="@font.css" text="QUIT" textAlignment="CENTER">
+               <font>
+                  <Font name="PossumSaltareNF" size="33.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>

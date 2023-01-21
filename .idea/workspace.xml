@@ -5,19 +5,121 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="89df579d-a291-4546-91f7-959ece0f5050" name="Changes" comment="Start">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/sevenwonders/GameView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/sevenwonders/MenuControllers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/sevenwonders/OptionsView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/sevenwonders/Player.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/sevenwonders/SelectionView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/sevenwonders/Vrac" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/sevenwonders/game-view.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/sevenwonders/options-view.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/sevenwonders/selection-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Assets/GUI/DeuxiemeScene.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Assets/GUI/FinScene.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Assets/GUI/PremiereScene.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Assets/background/Homepage.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Assets/background/Scroll_flat.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Assets/background/backgroundStart.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Assets/background/backimage.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Assets/background/backimage.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Assets/background/briqueLabel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Assets/background/briqueVBox.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Assets/background/cartouche.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Assets/background/cwm-client-launcher-9sn5eoUqiRDV3jgxYcYbrg.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Assets/background/cwm-client-launcher-NV6JTltB1ZtehlRbsHEGWA.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Assets/background/originalBrique.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Assets/background/originalScroll.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Assets/images/cards/archer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Assets/images/cards/architect.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Assets/images/cards/barbarian.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Assets/images/cards/brick.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Assets/images/cards/card-back/card-back-alexandrie.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Assets/images/cards/card-back/card-back-babylon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Assets/images/cards/card-back/card-back-ephese.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Assets/images/cards/card-back/card-back-gizeh.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Assets/images/cards/card-back/card-back-halicarnasse.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Assets/images/cards/card-back/card-back-olympie.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Assets/images/cards/card-back/card-back-question.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Assets/images/cards/card-back/card-back-rhodes.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Assets/images/cards/centurion.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Assets/images/cards/emperor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Assets/images/cards/glass.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Assets/images/cards/gold.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Assets/images/cards/law.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Assets/images/cards/mechanic.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Assets/images/cards/paper.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Assets/images/cards/stone.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Assets/images/cards/women_cat.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Assets/images/cards/wood.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Assets/images/decks/deck-alexandrie.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Assets/images/decks/deck-babylon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Assets/images/decks/deck-cizeh.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Assets/images/decks/deck-ephese.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Assets/images/decks/deck-halicarnasse.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Assets/images/decks/deck-olympie.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Assets/images/decks/deck-rhodes.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Assets/images/tokens-progress/back/token-back.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Assets/images/tokens-progress/token-architecture.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Assets/images/tokens-progress/token-artsAndCrafts.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Assets/images/tokens-progress/token-culture.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Assets/images/tokens-progress/token-decoration.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Assets/images/tokens-progress/token-economy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Assets/images/tokens-progress/token-green-token2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Assets/images/tokens-progress/token-ingeniery.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Assets/images/tokens-progress/token-jewelry.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Assets/images/tokens-progress/token-politic.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Assets/images/tokens-progress/token-propaganda.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Assets/images/tokens-progress/token-science.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Assets/images/tokens-progress/token-strategy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Assets/images/tokens-progress/token-tactic.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Assets/images/tokens-progress/token-urbanism.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Assets/images/tokens/token-3-laurel-points.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Assets/images/tokens/token-cat.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Assets/images/tokens/token-conflict-peace.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Assets/images/tokens/token-conflict-war.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Assets/images/wonders/alexandrie/alexandrie0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Assets/images/wonders/alexandrie/alexandrie1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Assets/images/wonders/alexandrie/alexandrie2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Assets/images/wonders/alexandrie/alexandrie3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Assets/images/wonders/alexandrie/alexandrie4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Assets/images/wonders/alexandrie/alexandrieFull.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Assets/images/wonders/babylon/babylon0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Assets/images/wonders/babylon/babylon1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Assets/images/wonders/babylon/babylon2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Assets/images/wonders/babylon/babylon3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Assets/images/wonders/babylon/babylon4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Assets/images/wonders/babylon/babylonFull.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Assets/images/wonders/ephese/ephese0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Assets/images/wonders/ephese/ephese1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Assets/images/wonders/ephese/ephese2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Assets/images/wonders/ephese/ephese3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Assets/images/wonders/ephese/ephese4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Assets/images/wonders/ephese/epheseFull.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Assets/images/wonders/giseh/gizeh0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Assets/images/wonders/giseh/gizeh1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Assets/images/wonders/giseh/gizeh2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Assets/images/wonders/giseh/gizeh3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Assets/images/wonders/giseh/gizeh4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Assets/images/wonders/giseh/gizehFull.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Assets/images/wonders/halicarnasse/halicarnasse0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Assets/images/wonders/halicarnasse/halicarnasse1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Assets/images/wonders/halicarnasse/halicarnasse2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Assets/images/wonders/halicarnasse/halicarnasse3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Assets/images/wonders/halicarnasse/halicarnasse4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Assets/images/wonders/halicarnasse/halicarnasseFull.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Assets/images/wonders/olympie/olympie0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Assets/images/wonders/olympie/olympie1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Assets/images/wonders/olympie/olympie2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Assets/images/wonders/olympie/olympie3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Assets/images/wonders/olympie/olympie4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Assets/images/wonders/olympie/olympieFull.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Assets/images/wonders/rhodes/rhodes0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Assets/images/wonders/rhodes/rhodes1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Assets/images/wonders/rhodes/rhodes2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Assets/images/wonders/rhodes/rhodes3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Assets/images/wonders/rhodes/rhodes4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Assets/images/wonders/rhodes/rhodesFull.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Assets/regle_page1.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Assets/regle_page2.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Assets/sound/AoM_Soundtrack_02_Eat_Your_Potatoes.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Assets/sound/Menu_Selection_Click.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Assets/sound/SMM.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/sevenwonders/PossumSaltareNF.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/sevenwonders/font.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sevenwonders/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sevenwonders/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sevenwonders/HelloController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/sevenwonders/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/sevenwonders/menu-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/sevenwonders/menu-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/sevenwonders/menu-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,25 +140,48 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="workspaceImportEnabled" value="true" />
-      </MavenImportingSettings>
-    </option>
-  </component>
   <component name="ProjectId" id="2JAQgNJILVziOXXgXaOSRl7uQEC" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
-  }
-}]]></component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\romai\IdeaProjects\sevenwonders\src\main\Assets" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\romai\IdeaProjects\sevenwonders\src\main\resources\com\example\sevenwonders" />
+      <recent name="C:\Users\romai\IdeaProjects\sevenwonders\src\main\java" />
+      <recent name="C:\Users\romai\IdeaProjects\sevenwonders\src\main\Assets\GUI" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.sevenwonders.Main" />
+      <module name="sevenwonders" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.sevenwonders.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -75,6 +200,17 @@
     </task>
     <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Start" />
