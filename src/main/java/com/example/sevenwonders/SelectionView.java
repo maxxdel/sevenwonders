@@ -49,7 +49,18 @@ public class SelectionView {
     @FXML
     private ComboBox comboBox;
 
+    @FXML
+    private Button boutonMenu;
+
     int players = 0;
+
+    @FXML
+    protected void mainMenu() throws IOException {
+        Stage stage = (Stage) boutonMenu.getScene().getWindow();
+        Scene scene = new Scene(FXMLLoader.load(getClass().getResource("menu-view.fxml")));
+        stage.setScene(scene);
+        stage.setFullScreen(true);
+    }
 
     public SelectionView() throws IOException {
     }

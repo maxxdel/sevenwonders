@@ -1,10 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
+<?import javafx.scene.image.ImageView?>
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sevenwonders.SelectionView">
     <children>
+
+        <ImageView fitHeight="2000" fitWidth="2000" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../Assets/background/Scroll_flat.jpg" />
+            </image>
+        </ImageView>
+
         <ComboBox fx:id="comboBox" layoutX="50.0" layoutY="50.0" onAction="#choiceBoxChoosed" onMouseClicked="#choiceBoxClick" prefWidth="250.0" promptText="Select the number of players" />
 
         <!-- Définis le nom et l'age des joueurs -->
@@ -25,6 +34,8 @@
         <TextField visible="false" fx:id="name5" layoutX="50" layoutY="350" prefWidth="150" promptText="Enter the name" />
 
         <Button visible="false" fx:id="startButton" layoutX="50" layoutY="400" onMouseClicked="#startButtonClicked" text="NEXT" />
+
+        <Button fx:id="boutonMenu" layoutX="10" layoutY="10" mnemonicParsing="false" onMouseClicked="#mainMenu" styleClass="transparent-button" stylesheets="@font.css" text="Main Menu" />
 
     </children>
 </AnchorPane>

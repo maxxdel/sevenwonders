@@ -10,7 +10,6 @@ public class Player {
         this.age = age;
         this.number = i;
         System.out.println("Joueur : " + i + ", " + name + ". Vous avez " + age + " ans.");
-
     }
 
     public String getName() {

@@ -5,14 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="89df579d-a291-4546-91f7-959ece0f5050" name="Changes" comment="Start">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Assets/background/ExtendHomepage.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sevenwonders/GameView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sevenwonders/GameView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sevenwonders/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sevenwonders/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Assets/GUI/DeuxiemeScene.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Assets/GUI/DeuxiemeScene.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Assets/GUI/PremiereScene.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Assets/GUI/PremiereScene.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sevenwonders/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sevenwonders/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sevenwonders/SelectionView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sevenwonders/SelectionView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/sevenwonders/font.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/sevenwonders/font.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/sevenwonders/game-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/sevenwonders/game-view.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/sevenwonders/menu-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/sevenwonders/menu-view.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/sevenwonders/options-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/sevenwonders/options-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/sevenwonders/selection-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/sevenwonders/selection-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +53,7 @@
       <recent name="C:\Users\romai\IdeaProjects\sevenwonders\src\main\Assets" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\maxde\Documents\GitHub\sevenwonders\src\main\resources\Assets\background" />
       <recent name="C:\Users\romai\IdeaProjects\sevenwonders\src\main\resources" />
       <recent name="C:\Users\romai\IdeaProjects\sevenwonders\src\main\resources\com\example\sevenwonders" />
       <recent name="C:\Users\romai\IdeaProjects\sevenwonders\src\main\java" />

@@ -32,5 +32,14 @@
     -fx-background-color: "transparent";
 }
 .transparent-button{
- -fx-background-color: transparent;
+    -fx-border-color: black;
+    -fx-border-width: 2px;
+    -fx-border-radius: 10px;
+    -fx-background-color: white;
+    -fx-text-fill: black;
+    -fx-background-insets: 0;
+}
+
+.transparent-button:hover{
+    -fx-background-color: gray;
 }
