@@ -110,3 +110,37 @@
 
                         List<String> noms = getNoms(comboBoxes);
                     }
+
+                    public void setGoodAmountPlayer() {
+
+                            //Je vais mettre un switch parce que voilà
+
+                            switch (){
+                                case 2:
+
+                            }
+
+                            if (super.i >= 2) {  //correction bug mineur nbplayer>= et pas == sinon si nombre >2 directement passe pas par la boucle
+                                player1.setPlayable(true);
+                                player2.setPlayable(true);
+                                if (nbPlayer >= 3) {
+                                    player3.setPlayable(true);
+                                    if (nbPlayer >= 4) {
+                                        player4.setPlayable(true);
+                                        if (nbPlayer >= 5) {
+                                            player5.setPlayable(true);
+                                            if (nbPlayer >= 6) {
+                                                player6.setPlayable(true);
+                                                if (nbPlayer == 7) {
+                                                    player7.setPlayable(true);
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            //Player[] tempListe = {player1, player2, player3, player4, player5, player6, player7};
+                            //players = new Player[nbPlayer];
+                            System.arraycopy(tempListe, 0, players, 0, nbPlayer);
+
+                        }

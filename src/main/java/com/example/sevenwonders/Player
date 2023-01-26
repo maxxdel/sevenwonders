@@ -1,0 +1,22 @@
+
+public class Player {
+    private String name;
+    private int age;
+    private int number;
+    private boolean playable;
+
+    public Player(String name, int age, int i, boolean playable) {
+        this.name = name;
+        this.age = age;
+        this.number = i;
+        System.out.println("Joueur : " + i + ", " + name + ". Vous avez " + age + " ans.");
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+}

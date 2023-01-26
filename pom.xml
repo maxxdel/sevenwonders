@@ -69,6 +69,11 @@
             <version>${junit.version}</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>org.sonatype.sisu</groupId>
+            <artifactId>sisu-guice</artifactId>
+            <version>4.2.1</version>
+        </dependency>
     </dependencies>
 
     <build>

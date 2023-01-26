@@ -1,0 +1,34 @@
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sevenwonders.SelectionView">
+    <children>
+
+        <ImageView fitHeight="2000" fitWidth="2000" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../Assets/background/Scroll_flat.jpg" />
+            </image>
+        </ImageView>
+
+        <ComboBox fx:id="comboBox" layoutX="50.0" layoutY="50.0" onAction="#choiceBoxChoosed" onMouseClicked="#choiceBoxClick" prefWidth="250.0" promptText="Select the number of players" />
+
+        <!-- Définis le nom et l'age des joueurs -->
+
+        <ComboBox visible="false" fx:id="age1" onMouseClicked="#setType1" layoutX="250.0" layoutY="150.0" prefWidth="150.0" promptText="Select age of player 1" />
+        <TextField visible="false" fx:id="name1" layoutX="50" layoutY="150" prefWidth="150" promptText="Enter the name" />
+
+        <ComboBox visible="false" fx:id="age2" onMouseClicked="#setType2" layoutX="250.0" layoutY="200.0" prefWidth="150.0" promptText="Select age of player 2" />
+        <TextField visible="false" fx:id="name2" layoutX="50" layoutY="200" prefWidth="150" promptText="Enter the name" />
+
+        <ComboBox visible="false" fx:id="age3" onMouseClicked="#setType3" layoutX="250.0" layoutY="250.0" prefWidth="150.0" promptText="Select age of player 3" />
+        <TextField visible="false" fx:id="name3" layoutX="50" layoutY="250" prefWidth="150" promptText="Enter the name" />
+
+        <ComboBox visible="false" fx:id="age4" onMouseClicked="#setType4" layoutX="250.0" layoutY="300.0" prefWidth="150.0" promptText="Select age of player 4" />
+        <TextField visible="false" fx:id="name4" layoutX="50" layoutY="300" prefWidth="150" promptText="Enter the name" />
+
+        <ComboBox visible="false" fx:id="age5" onMouseClicked="#setType5" layoutX="250.0" layoutY="350.0" prefWidth="150.0" promptText="Select age of player 5" />
+        <TextField visible="false" fx:id="name5" layoutX="50" layoutY="350" prefWidth="150" promptText="Enter the name" />
+
+        <Button visible="false" fx:id="startButton" layoutX="50" layoutY="400" onMouseClicked="#startButtonClicked" text="NEXT" />
+
+        <Button fx:id="boutonMenu" layoutX="10" layoutY="10" mnemonicParsing="false" onMouseClicked="#mainMenu" styleClass="transparent-button" stylesheets="@font.css" text="Main Menu" />
+
+    </children>
+</AnchorPane>
