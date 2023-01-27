@@ -10,6 +10,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
+import javafx.stage.Window;
 
 public class SelectionView {
 
@@ -17,46 +18,46 @@ public class SelectionView {
     private Button startButton;
 
     @FXML
-    private ComboBox age1;
+    protected ComboBox age1;
 
     @FXML
-    private ComboBox age2;
+    protected ComboBox age2;
 
     @FXML
-    private ComboBox age3;
+    protected ComboBox age3;
 
     @FXML
-    private ComboBox age4;
+    protected ComboBox age4;
 
     @FXML
-    private ComboBox age5;
+    protected ComboBox age5;
 
     @FXML
-    private ComboBox age6;
+    protected ComboBox age6;
 
     @FXML
-    private ComboBox age7;
+    protected ComboBox age7;
 
     @FXML
-    private TextField name1;
+    protected TextField name1;
 
     @FXML
-    private TextField name2;
+    protected TextField name2;
 
     @FXML
-    private TextField name3;
+    protected TextField name3;
 
     @FXML
-    private TextField name4;
+    protected TextField name4;
 
     @FXML
-    private TextField name5;
+    protected TextField name5;
 
     @FXML
-    private TextField name6;
+    protected TextField name6;
 
     @FXML
-    private TextField name7;
+    protected TextField name7;
 
     @FXML
     private ComboBox comboBox;
@@ -68,8 +69,6 @@ public class SelectionView {
 
     boolean next = false;
 
-    int i = 1;
-
     @FXML
     protected void mainMenu() throws IOException {
         Stage stage = (Stage) boutonMenu.getScene().getWindow();
@@ -80,7 +79,7 @@ public class SelectionView {
 
     public void nextScene() throws IOException {
         Stage stage = (Stage) startButton.getScene().getWindow();
-        Scene scene = new Scene(FXMLLoader.load(getClass().getResource("game-view.fxml")));
+        Scene scene = new Scene(FXMLLoader.load(getClass().getResource("wonderselection.fxml")));
         stage.setScene(scene);
         stage.setFullScreen(true);
     }
@@ -88,8 +87,7 @@ public class SelectionView {
     @FXML
     protected void choiceBoxClick() {
         comboBox.getItems().clear();
-        comboBox.getItems().addAll("1", "2", "3", "4", "5");
-
+        comboBox.getItems().addAll("1", "2", "3", "4", "5", "6", "7");
     }
 
     @FXML
@@ -134,9 +132,9 @@ public class SelectionView {
 
     @FXML
     protected void setType6() {
-        age7.getItems().clear();
+        age6.getItems().clear();
         for (int i = 7; i <= 77; i++) {
-            age7.getItems().add(i);
+            age6.getItems().add(i);
         }
     }
 
@@ -149,53 +147,8 @@ public class SelectionView {
     }
 
     public void startButtonClicked() throws IOException {
-
-        if (players <= 0) {
-            System.out.println("EH REGARDEZ IL A PAS D'AMIS");
-            next = false;
-        }
-        else if (players >= 1){
-            Player player1 = new Player(name1.getText(), age1);
-            Player player2 = new Player(name2.getText(), age2);
-            next = true;
-
-            if (players >= 2) {
-                Player player3 = new Player(name3.getText(), age3);
-                next = true;
-
-                if (players >= 3) {
-                    Player player4 = new Player(name4.getText(), age4);
-                    next = true;
-
-                    if (players >= 4) {
-                        Player player5 = new Player(name5.getText(), age5);
-                        next = true;
-
-                        if (players >= 5) {
-                            Player player6 = new Player(name6.getText(), age6);
-                            next = true;
-
-                            if (players >= 6) {
-                                Player player7 = new Player(name7.getText(), age7);
-                                next = true;
-                            }
-
-                        }
-
-                    }
-
-                }
-
-            }
-
-        }
-
-        if (next = true){
-            nextScene();
-        }
-
+        nextScene();
     }
-
     @FXML
     protected void choiceBoxChoosed() {
         players = comboBox.getSelectionModel().getSelectedIndex();

@@ -6,28 +6,35 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Player {
-    private String name;
-    private int age;
-    private Wonder wonder;
+
+    public String name;
+    public int age;
+    public String wonder;
     private int score;
     private int shieldCount;
     private int militaryVictoryPoints;
     private List<ProgressToken> progressTokens;
 
-    public Player(String name, ComboBox age) {
-        this.name = String.valueOf(name);
-        this.age = age.getVisibleRowCount();
-        this.wonder = wonder;
+    public Player() {
         this.score = 0;
         this.shieldCount = 0;
         this.militaryVictoryPoints = 0;
         progressTokens = new ArrayList<>();
+    }
 
+
+    public void setup(String name, int age){
+        this.name = name;
+        this.age = age;
+        this.wonder = wonder;
         System.out.println("Player " + this + " is named "+ this.name + " and is " + this.age + " years old");
     }
 
-    public void getName() {
-        System.out.println(this.name);
+    public void setWonder(String wonder){
+        this.wonder = wonder;
+    }
+    public String getName() {
+        return this.name;
     }
 
     public int getAge() {
@@ -36,14 +43,6 @@ public class Player {
 
     public void setAge(int age) {
         this.age = age;
-    }
-
-    public Wonder getWonder() {
-        return wonder;
-    }
-
-    public void setWonder(Wonder wonder) {
-        this.wonder = wonder;
     }
 
     public int getScore() {
