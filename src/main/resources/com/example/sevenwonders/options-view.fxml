@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sevenwonders.OptionsView">
+    <children>
+      <ImageView fitHeight="2000" fitWidth="2000" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Assets/background/Scroll_flat.jpg" />
+         </image>
+      </ImageView>
+        <Button fx:id="boutonMenu" layoutX="10" layoutY="10" mnemonicParsing="false" onMouseClicked="#mainMenu" styleClass="transparent-button" stylesheets="@font.css" text="Main Menu" />
+        <Label layoutX="469.0" layoutY="283.0" text="Music Volume :" />
+        <Slider layoutX="569.0" layoutY="286.0" />
+        <Label layoutX="469.0" layoutY="421.0" text="Effects Volume :" />
+        <Slider layoutX="569.0" layoutY="424.0" />
+    </children>
+</AnchorPane>
