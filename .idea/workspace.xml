@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="89df579d-a291-4546-91f7-959ece0f5050" name="Changes" comment="edit">
+    <list default="true" id="6b575051-0db9-457e-b89b-3b2f7bf3a4b8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UML FINAL.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sevenwonders/GameView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sevenwonders/GameView.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -12,43 +20,29 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="FxmlFile" />
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2JAQgNJILVziOXXgXaOSRl7uQEC" />
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2KtkzYhIdFeeOYr9a0mmYf30CH2" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/maxde/Desktop/SevenWondersArchitectFinal-master&quot;
-  }
-}</component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\maxde\Documents\GitHub\sevenwonders\src\main\resources\Assets\background" />
-      <recent name="C:\Users\romai\IdeaProjects\sevenwonders\src\main\Assets" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\maxde\Documents\GitHub\sevenwonders\src\main\resources\Assets\background" />
-      <recent name="C:\Users\romai\IdeaProjects\sevenwonders\src\main\resources" />
-      <recent name="C:\Users\romai\IdeaProjects\sevenwonders\src\main\resources\com\example\sevenwonders" />
-      <recent name="C:\Users\romai\IdeaProjects\sevenwonders\src\main\java" />
-      <recent name="C:\Users\romai\IdeaProjects\sevenwonders\src\main\Assets\GUI" />
-    </key>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -73,55 +67,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="89df579d-a291-4546-91f7-959ece0f5050" name="Changes" comment="" />
-      <created>1671518519943</created>
+      <changelist id="6b575051-0db9-457e-b89b-3b2f7bf3a4b8" name="Changes" comment="" />
+      <created>1674801530886</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1671518519943</updated>
+      <updated>1674801530886</updated>
     </task>
-    <task id="LOCAL-00001" summary="Start">
-      <created>1671518647372</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1671518647372</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Upgrading few details in GUI">
-      <created>1674354317187</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1674354317187</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Upgrading details, creating players and making few improvement on GUI. Scene (with no parameter) implemented">
-      <created>1674770615971</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1674770615972</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Upgrading details, creating players and making few improvement on GUI. Scene (with no parameter) implemented">
-      <created>1674770628295</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1674770628295</updated>
-    </task>
-    <task id="LOCAL-00005" summary="It's the big sauce samourai, inchbouddha mon année ça passera">
-      <created>1674793099566</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1674793099566</updated>
-    </task>
-    <task id="LOCAL-00006" summary="edit">
-      <created>1674796819205</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1674796819205</updated>
-    </task>
-    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -134,13 +85,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Start" />
-    <MESSAGE value="Upgrading few details in GUI" />
-    <MESSAGE value="Upgrading details, creating players and making few improvement on GUI. Scene (with no parameter) implemented" />
-    <MESSAGE value="It's the big sauce samourai, inchbouddha mon année ça passera" />
-    <MESSAGE value="edit" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit" />
   </component>
 </project>
