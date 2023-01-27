@@ -26,7 +26,6 @@ public class Player {
     public void setup(String name, int age){
         this.name = name;
         this.age = age;
-        this.wonder = wonder;
         System.out.println("Player " + this + " is named "+ this.name + " and is " + this.age + " years old");
     }
 

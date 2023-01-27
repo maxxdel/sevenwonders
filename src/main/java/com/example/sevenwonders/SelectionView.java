@@ -59,6 +59,23 @@ public class SelectionView {
     @FXML
     protected TextField name7;
 
+    String pseudo1;
+    String pseudo2;
+    String pseudo3;
+    String pseudo4;
+    String pseudo5;
+    String pseudo6;
+    String pseudo7;
+
+    int vieux1;
+    int vieux2;
+    int vieux3;
+    int vieux4;
+    int vieux5;
+    int vieux6;
+    int vieux7;
+
+
     @FXML
     private ComboBox comboBox;
 
@@ -147,7 +164,89 @@ public class SelectionView {
     }
 
     public void startButtonClicked() throws IOException {
+
+        switch (players) {
+
+            case 0:
+                pseudo1 = name1.getText();
+                vieux1 = (int) age1.getValue();
+                break;
+
+            case 1:
+                pseudo1 = name1.getText();
+                vieux1 = (int) age1.getValue();
+                pseudo2 = name2.getText();
+                vieux2 = (int) age2.getValue();
+                break;
+
+            case 2:
+                pseudo1 = name1.getText();
+                vieux1 = (int) age1.getValue();
+                pseudo2 = name2.getText();
+                vieux2 = (int) age2.getValue();
+                pseudo3 = name3.getText();
+                vieux3 = (int) age3.getValue();
+                break;
+
+            case 3:
+                pseudo1 = name1.getText();
+                vieux1 = (int) age1.getValue();
+                pseudo2 = name2.getText();
+                vieux2 = (int) age2.getValue();
+                pseudo3 = name3.getText();
+                vieux3 = (int) age3.getValue();
+                pseudo4 = name4.getText();
+                vieux4 = (int) age4.getValue();
+                break;
+
+            case 4:
+                pseudo1 = name1.getText();
+                vieux1 = (int) age1.getValue();
+                pseudo2 = name2.getText();
+                vieux2 = (int) age2.getValue();
+                pseudo3 = name3.getText();
+                vieux3 = (int) age3.getValue();
+                pseudo4 = name4.getText();
+                vieux4 = (int) age4.getValue();
+                pseudo5 = name5.getText();
+                vieux5 = (int) age5.getValue();
+                break;
+
+            case 5:
+                pseudo1 = name1.getText();
+                vieux1 = (int) age1.getValue();
+                pseudo2 = name2.getText();
+                vieux2 = (int) age2.getValue();
+                pseudo3 = name3.getText();
+                vieux3 = (int) age3.getValue();
+                pseudo4 = name4.getText();
+                vieux4 = (int) age4.getValue();
+                pseudo5 = name5.getText();
+                vieux5 = (int) age5.getValue();
+                pseudo6 = name6.getText();
+                vieux6 = (int) age6.getValue();
+                break;
+
+            case 6:
+                pseudo1 = name1.getText();
+                vieux1 = (int) age1.getValue();
+                pseudo2 = name2.getText();
+                vieux2 = (int) age2.getValue();
+                pseudo3 = name3.getText();
+                vieux3 = (int) age3.getValue();
+                pseudo4 = name4.getText();
+                vieux4 = (int) age4.getValue();
+                pseudo5 = name5.getText();
+                vieux5 = (int) age5.getValue();
+                pseudo6 = name6.getText();
+                vieux6 = (int) age6.getValue();
+                pseudo7 = name7.getText();
+                vieux7 = (int) age7.getValue();
+                break;
+        }
+
         nextScene();
+
     }
     @FXML
     protected void choiceBoxChoosed() {
