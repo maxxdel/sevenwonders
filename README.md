@@ -1,2 +1,2 @@
 # sevenwonders
- Pour le fichier UML qui était à rendre le 13/01, il se situe dans la branche "Rom1".
+ Le Projet se trouve dans la branche "Romainterface"
