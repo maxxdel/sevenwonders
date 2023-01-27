@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="89df579d-a291-4546-91f7-959ece0f5050" name="Changes" comment="It's the big sauce samourai, inchbouddha mon année ça passera">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="89df579d-a291-4546-91f7-959ece0f5050" name="Changes" comment="edit">
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sevenwonders/GameView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sevenwonders/GameView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sevenwonders/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sevenwonders/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sevenwonders/SelectionView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sevenwonders/SelectionView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sevenwonders/WondersSelection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sevenwonders/WondersSelection.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +114,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674793099566</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="edit">
+      <created>1674796819205</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1674796819205</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -137,6 +140,7 @@
     <MESSAGE value="Upgrading few details in GUI" />
     <MESSAGE value="Upgrading details, creating players and making few improvement on GUI. Scene (with no parameter) implemented" />
     <MESSAGE value="It's the big sauce samourai, inchbouddha mon année ça passera" />
-    <option name="LAST_COMMIT_MESSAGE" value="It's the big sauce samourai, inchbouddha mon année ça passera" />
+    <MESSAGE value="edit" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit" />
   </component>
 </project>

@@ -78,4 +78,6 @@ public class Player {
         this.progressTokens.add(progressToken);
     }
 
+    public void getWonderStagesBuilt() {
+    }
 }
